@@ -1,3 +1,104 @@
-head {
-    background-image: url("../images/image_accueil.webp");
+@font-face {
+    font-family: 'Poppins';
+    src:    url('../fonts/Poppins-Medium.woff2') format('woff2'),
+            url('../fonts/Poppins-Medium.woff') format('woff'),
+            url('../fonts/Poppins-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src:    url('../fonts/Poppins-Light.woff2') format('woff2'),
+            url('../fonts/Poppins-Light.woff') format('woff'),
+            url('../fonts/Poppins-Light.ttf') format('truetype');
+    font-weight: lighter;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src:    url('../fonts/Poppins-LightItalic.woff2') format('woff2'),
+            url('../fonts/Poppins-LightItalic.woff') format('woff'),
+            url('../fonts/Poppins-LightItalic.ttf') format('truetype');
+    font-weight: lighter;
+    font-style: italic;
+}
+
+body {
+    font-family: 'Poppins';
+    color: ffffff;
+    margin: 0px;
+}
+
+#main {
+    background-image: url("../images/image_accueil.png");
+    width: 100%;
+    height: 960px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0px, 0px;
+}
+
+#main #bloc_noir {
+    background-color: #00000088;
+    display: inline-block;
+    width: 660px;
+    height: 100%;
+    color: #ffffff;
+}
+
+#main #bloc_noir div {
+    margin-top: 130px;
+    margin-left: 51px;
+}
+
+#main #bloc_noir div h1 {
+    font-size: 96px;
+    text-decoration: underline;
+}
+
+#main #bloc_noir div h3 {
+    font-size: 64px;
+    margin-top: -50px;
+}
+
+#main img {
+    position: absolute;
+    display: inline-block;
+    height: 400px;
+    width: 400px;
+    margin-top: 277px;
+    margin-left: 170px;
+}
+
+#main #sponsors {
+    display: inline-block;
+    position: absolute;
+    height: 83px;
+    width: 228px;
+    font-size: 36px;
+    background-color: #fe8103;
+    border: none;
+    border-radius: 60px;
+    color: #ffffff;
+    box-shadow: 6px 4px 4px#00000050;
+    margin-left: 944px;
+    margin-top: 72px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+#main #sponsors a {
+    color: #ffffff;
+    text-decoration: none;
+    vertical-align: middle;
+}
+
+#main #sponsors:hover {
+    background-color: #ffffff;
+}
+
+#main #sponsors:hover a {
+    color: #fe8103;
 }
