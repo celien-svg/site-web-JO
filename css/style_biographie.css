@@ -26,13 +26,60 @@
 }
 
 body {
-   font-family: 'Poppins'; 
+   font-family: 'Poppins';
    width: 80%;
    margin: auto;
 }
 
+#nav_haut {
+    width: 100%;
+    background-color: #007fff;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    height: 130px;
+}
+
+#nav_haut ul {
+    display: flexbox; /* Permet un alignement flexible */
+    justify-content: space-around; /* Espacement uniforme entre les boutons */
+    align-items: center;
+    margin: 0; /* Supprime les marges */
+    padding: 0; /* Supprime les paddings */
+    list-style: none; /* Supprime les puces des listes */
+}
+
+#nav_haut ul a div {
+    display: inline-block;
+    width: 25%;
+    background-color: #0c4c8c;
+    margin-right: -5px;
+    padding: 0px;
+    height: 130px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#nav_haut ul a div p {
+    margin-top: 45px;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 24px;
+}
+
+#nav_haut ul a:hover div {
+    background-color: #ffffff;
+}
+
+#nav_haut ul a:hover div p {
+    color: #000000;
+    text-decoration: underline;
+}
+
 #intro {
     text-align: justify;
+    margin: 20px 0 20px 0;
 }
 
 img {
@@ -42,21 +89,39 @@ img {
 }
 
 .fond {
-    height: 600px;
+    min-height: 450px;
     clear: both;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 10% 20px 10%;
 }
 
-/*.skipper {
-    
-}*/
+.skipper {
+    text-align: center;
+    padding: 20px;
+}
+
+.skipper h3 {
+    margin: 0;
+    padding: 10px;
+    background-color: #0c4c8c;
+    color: #fff;
+    border-radius: 5px 5px 0 0;
+    width: auto; /* Évite une largeur fixe */
+}
 
 .carte {
+    height: auto; /* Adapte la hauteur au contenu */
     font-size: 16px;
-    height: 270px;
     background-color: #007fff;
-    padding: 20px;
     color: #fff;
-    width: 60%;
+    padding: 20px;
+    text-align: justify;
+    border-radius: 0px 5px 5px 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    min-height: 280px;
 }
 
 #picon, #bernaz {
@@ -88,7 +153,10 @@ img {
 .fond #picon, .fond #bernaz {
     background-color: #0c4c8c;
     width: 100%;
-    height: 600px;
+}
+
+.fond #nolot {
+    width: 100%;
 }
 
 div div p {
@@ -97,4 +165,12 @@ div div p {
 
 h3 {
     margin: 0px;
+}
+
+@media only screen 
+    and (max-device-width : 450px) {
+    img {
+        width: 100%;
+        height: auto;
+    }
 }
