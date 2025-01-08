@@ -109,7 +109,7 @@ body {
 
 #nav_haut {
     width: 100%;
-    background-color: #0c4c8c;
+    background-color: #007fff;
     margin-top: 0px;
     margin-bottom: 0px;
     padding-top: 0px;
@@ -118,19 +118,35 @@ body {
 }
 
 #nav_haut ul {
-    width: 70%;
+    width: 80%;
     margin: auto;
     margin-top: 0px;
     margin-bottom: 0px;
-    padding: 0px;
 }
 
-#nav_haut ul div {
-    display: inline;
+#nav_haut ul a div {
+    display: inline-block;
     width: 25%;
-    background-color: #007fff;
-    margin: 0px;
+    background-color: #0c4c8c;
+    margin-right: -5px;
     padding: 0px;
-    height: 100%;
+    height: 130px;
+    text-align: center;
+    vertical-align: middle;
 }
 
+#nav_haut ul a div p {
+    margin-top: 45px;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 24px;
+}
+
+#nav_haut ul a:hover div {
+    background-color: #ffffff;
+}
+
+#nav_haut ul a:hover div p {
+    color: #000000;
+    
+}
