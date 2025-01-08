@@ -337,3 +337,69 @@ body {
         transform: translateY(-50px);
     }
 }
+
+/*style du footer*/
+
+footer {
+    background-color: #0c4c8c;
+    height: 100px;
+    margin-bottom: -10px;
+    margin-top: 0px;
+}
+
+footer #logo {
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 40px;
+    height: 80px;
+}
+
+footer #fb {
+    position: absolute;
+    height: 70px;
+    width: 70px;
+    right: 6%;
+    margin-top: 15px;
+}
+
+footer #ix {
+    position: absolute;
+    margin-top: 15px;
+    height: 70px;
+    width: 70px;
+    right: 6%;
+}
+
+footer #ins {
+    position: absolute;
+    margin-top: 27px;
+    right: 11%;
+    height: 48px;
+    width: 48px;
+    vertical-align: baseline;
+}
+
+
+footer p {
+    position: absolute;
+    display: inline-block;
+    font-size: 20px;
+}
+
+footer #ct {
+    margin-left: 1100px;
+    margin-top: 40px;
+}
+
+footer #ml {
+    margin-left: 200px;
+    margin-top: 40px;
+    color: #000000;
+    text-decoration: underline 2px;
+}
+
+footer #ml:hover {
+    color: #fe8103;
+    text-decoration: underline #fe8103 2px;
+} 
+
