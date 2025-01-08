@@ -31,6 +31,10 @@ body {
    margin: auto;
 }
 
+button {
+    display: none;
+}
+
 #nav_haut {
     width: 100%;
     background-color: #007fff;
@@ -38,15 +42,15 @@ body {
     margin-bottom: 0px;
     padding-top: 0px;
     padding-bottom: 0px;
-    height: 130px;
+    height: 65px;
 }
 
 #nav_haut ul {
     display: flexbox; /* Permet un alignement flexible */
     justify-content: space-around; /* Espacement uniforme entre les boutons */
     align-items: center;
-    margin: 0; /* Supprime les marges */
-    padding: 0; /* Supprime les paddings */
+    margin: 0; 
+    padding: 0; 
     list-style: none; /* Supprime les puces des listes */
 }
 
@@ -56,13 +60,13 @@ body {
     background-color: #0c4c8c;
     margin-right: -5px;
     padding: 0px;
-    height: 130px;
+    height: 65px;
     text-align: center;
     vertical-align: middle;
 }
 
 #nav_haut ul a div p {
-    margin-top: 45px;
+    margin-top: 14px;
     text-decoration: none;
     color: #ffffff;
     font-size: 24px;
@@ -165,6 +169,119 @@ div div p {
 
 h3 {
     margin: 0px;
+}
+
+/*animation de la nav du bas*/
+
+#nav_bas {
+    margin-top: 100px;
+}
+
+#nav_bas ul {
+    width: 70%;
+    height: 90px;
+    margin: auto;
+}
+
+#nav_bas ul a div {
+    display: inline-flex;
+    background-color: #007fff;
+    width: 20%;
+    height: 100%;
+    margin-right: 4%;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+
+}
+
+#nav_bas ul a div p {
+    max-width: 50%;
+    margin: auto;
+    margin-top: 15px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+#nav_bas ul a div:hover {
+    background-color: #0c4c8c;
+    height: 140px;
+    will-change: translation;
+    animation: montee 0.5s ease-in-out forwards;
+}
+
+@keyframes montee {
+    0% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(-50px);
+    }
+}
+
+@media only screen 
+    and (max-device-width : 1061px) {
+    #nav_haut ul a div p {
+        font-size: 20px;
+    }
+}
+
+@media only screen 
+    and (max-device-width : 883px) {
+    #nav_haut ul #voile div p {
+        margin-top: 2px;
+    }
+}
+
+@media only screen 
+    and (max-device-width : 600px) { /*menu hamburger*/
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    button {
+        display: block;
+        height: 25px;
+        width: 25px;
+        margin: 2px 0 0 5px;
+        background-color: #fff;
+        border-radius: 4px;
+        border: 0px;
+    }
+
+    button img {
+        height: 20px;
+        width: 20px;
+        margin-left: -3px;
+    }
+
+    #nav_haut {
+        background-color: #ffffff00;
+        position: absolute;
+        left: -100%;
+        display: none;
+    }
+
+    @keyframes deroule {
+        0% {
+            transform: translateX(-100%)
+        }
+        100% {
+            transform: translateX(0px)
+        }
+    }
+
+    button:active #nav_haut {
+        will-change: translation;
+        animation: deroule;
+        display: block;
+    }
+
+    #nav_haut a {
+        display: block;
+        width: 600px;
+    }
 }
 
 @media only screen 
