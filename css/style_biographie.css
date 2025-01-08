@@ -171,6 +171,54 @@ h3 {
     margin: 0px;
 }
 
+/*animation de la nav du bas*/
+
+#nav_bas {
+    margin-top: 100px;
+}
+
+#nav_bas ul {
+    width: 70%;
+    height: 90px;
+    margin: auto;
+}
+
+#nav_bas ul a div {
+    display: inline-flex;
+    background-color: #007fff;
+    width: 20%;
+    height: 100%;
+    margin-right: 4%;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+
+}
+
+#nav_bas ul a div p {
+    max-width: 50%;
+    margin: auto;
+    margin-top: 15px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+#nav_bas ul a div:hover {
+    background-color: #0c4c8c;
+    height: 140px;
+    will-change: translation;
+    animation: montee 0.5s ease-in-out forwards;
+}
+
+@keyframes montee {
+    0% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(-50px);
+    }
+}
+
 @media only screen 
     and (max-device-width : 1061px) {
     #nav_haut ul a div p {
