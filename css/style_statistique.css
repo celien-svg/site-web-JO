@@ -24,6 +24,17 @@
     font-weight: lighter;
     font-style: italic;
 }
+
+body{
+    margin:80%;
+}
+
+img{
+    float :left
+}
 #deuxième_bloc{ 
-    background-color:0C4C8C;
+    background-color:#0C4C8C;
+}
+#quatrième_bloc {
+    background-color:#0C4C8C;
 }
