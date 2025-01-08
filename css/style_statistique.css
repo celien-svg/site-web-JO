@@ -26,11 +26,18 @@
 }
 
 body{
-    margin :0;
+    margin :10%;
 }
 
 article{
     text-align: justify;
+}
+p{
+    font-size: 100%;
+	text-align: center;
+	font-weight: bold;
+	text-transform: uppercase;
+	clear: both;
 }
 
 img{
@@ -38,7 +45,9 @@ img{
 }
 #deuxième_bloc{ 
     background-color:#0C4C8C;
+    color: white;
 }
 #quatrième_bloc {
     background-color:#0C4C8C;
+    color: white;
 }
