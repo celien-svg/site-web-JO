@@ -1,3 +1,4 @@
+/*Polices d'écriture ----------------------------------------------------------------------------------------------*/
 @font-face {
     font-family: 'Poppins';
     src:    url('../fonts/Poppins-Medium.woff2') format('woff2'),
@@ -24,18 +25,19 @@
     font-weight: lighter;
     font-style: italic;
 }
+/*Fin polices d'écriture ------------------------------------------------------------------------------------------*/
 
 body {
    font-family: 'Poppins';
-   width: 80%;
-   margin: auto;
+   max-width: 100%;
+   margin: 0px;
 }
 
-button {
+#bouton_menu {
     display: none;
 }
 
-/*---Menu nav du haut------------------------------------------------------------------------------*/
+/*Menu nav du haut-------------------------------------------------------------------------------------------------*/
 #nav_haut {
     width: 100%;
     background-color: #007fff;
@@ -78,10 +80,12 @@ button {
 #nav_haut ul a:hover div p {
     color: #000000;
 }
-/*Menu nav du bas -------------------------------------------------------------------------------*/
+/*Fin menu nav du haut --------------------------------------------------------------------------------------------*/
+
+/*Mise en page (cartes) -------------------------------------------------------------------------------------------*/
 #intro {
     text-align: justify;
-    margin: 20px 0 20px 0;
+    margin: 50px 10px 20px 10px;
 }
 
 img {
@@ -168,52 +172,94 @@ div div p {
 h3 {
     margin: 0px;
 }
+/*Fin mise en page (cartes) ---------------------------------------------------------------------------------------*/
 
-
+/*Responsive nav du haut -------------------------------------------------------------------------------------------*/
+@media only screen 
+    and (max-device-width : 1061px) {
+        #nav_haut ul #voile div p {
+        margin-top: 12px;
+    }
+}
 
 @media only screen 
-    and (max-device-width : 600px) { /*menu hamburger*/
+    and (max-device-width : 716px) { /*menu hamburger*/
     body {
         width: 100%;
         overflow-x: hidden;
     }
 
-    button {
-        display: block;
-        height: 25px;
-        width: 25px;
-        margin: 2px 0 0 5px;
-        background-color: #fff;
-        border-radius: 4px;
-        border: 0px;
+    #bouton_menu {
+        display: none;
     }
 
-    button img {
-        height: 20px;
+    label.bouton_menu {
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        z-index: 1001;
+        height: 40px;
+        width: 40px;
+        background-color: #000;
+        border-radius: 50%x;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    label.bouton_menu span {
+        display: block;
+        position: absolute;
+        height: 2px;
         width: 20px;
-        margin-left: -3px;
+        background: #fff;
+        border-radius: 9px;
+        transition: 0.3s ease-in-out;
+    }
+    
+    label.bouton_menu span:nth-of-type(1) {
+        top: 10px;
+    }
+
+    label.bouton_menu span:nth-of-type(2) {
+        top: 18px;
+      }
+      
+    label.bouton_menu span:nth-of-type(3) {
+        top: 26px;
+    }
+/*animation croix*/
+    #bouton_menu:checked + label.bouton_menu span:nth-of-type(1) {
+        transform: rotate(45deg);
+        top: 18px;
+    }
+      
+    #bouton_menu:checked + label.bouton_menu span:nth-of-type(2) {
+        opacity: 0;
+    }
+      
+    #bouton_menu:checked + label.bouton_menu span:nth-of-type(3) {
+        transform: rotate(-45deg);
+        top: 18px;
     }
 
     #nav_haut {
         background-color: #ffffff00;
-        position: absolute;
-        left: -100%;
-        display: none;
+        position: fixed;
+        width: 250px;
+        height: 100%;
+        left: -250px;
+        transition: transform 0.3s ease-in-out;
+        z-index: 1000;
     }
 
-    @keyframes deroule {
-        0% {
-            transform: translateX(-100%)
-        }
-        100% {
-            transform: translateX(0px)
-        }
+    #bouton_menu:checked + label {
+        background-color: #f00;
     }
 
-    button:active #nav_haut {
-        will-change: translation;
-        animation: deroule;
-        display: block;
+    #bouton_menu:checked ~ #nav_haut {
+        transform: translateX(200px);
     }
 
     #nav_haut a {
@@ -221,6 +267,7 @@ h3 {
         width: 600px;
     }
 }
+/*Fin responsive nav du haut --------------------------------------------------------------------------------------*/
 
 @media only screen 
     and (max-device-width : 450px) {
@@ -230,7 +277,7 @@ h3 {
     }
 }
 
-/*animation de la nav du bas*/
+/*Menu nav du bas -------------------------------------------------------------------------------------------------*/
 
 #nav_bas {
     margin-top: 100px;
@@ -278,16 +325,4 @@ h3 {
     }
 }
 
-@media only screen 
-    and (max-device-width : 1061px) {
-    #nav_haut ul a div p {
-        font-size: 20px;
-    }
-}
-
-@media only screen 
-    and (max-device-width : 883px) {
-    #nav_haut ul #voile div p {
-        margin-top: 2px;
-    }
-}
+/*Fin menu nav du bas--------------------------------------------------------------------------------------------------*/
