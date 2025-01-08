@@ -86,13 +86,13 @@ body {
     margin-left: 944px;
     margin-top: 72px;
     text-align: center;
+    padding-top: 20px;
 }
 
 #main #sponsors a {
     color: #ffffff;
     text-decoration: none;
     vertical-align: middle;
-    position: static;
 }
 
 #main #sponsors:hover {
