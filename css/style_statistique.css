@@ -25,10 +25,16 @@
     font-style: italic;
 }
 
+body{
+    margin :0;
+}
 
+article{
+    text-align: justify;
+}
 
 img{
-    float :left
+    float :left;
 }
 #deuxième_bloc{ 
     background-color:#0C4C8C;
