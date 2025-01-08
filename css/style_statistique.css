@@ -76,8 +76,8 @@ and (orientation : landscape) {
 
 }
 body{
-    font-size: 15px;
-	line-height: 150%;
+
+    font-family: 'Poppins';
 }
 
 article{
@@ -115,10 +115,14 @@ img{
     color: white;
     font-weight: bold;
     position: relative;
+    border-radius: 0px 5px 5px 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 #quatrième_bloc {
     background-color:#0C4C8C;
     color: white;
+    border-radius: 0px 5px 5px 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 }
 
