@@ -31,10 +31,12 @@ body {
     margin: 0px;
 }
 
+/*style du haut de la page d'accueil (la grande image du debut)*/
+
 #main {
     background-image: url("../images/image_accueil.png");
     width: 100%;
-    height: 960px;
+    height: 735px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 0px, 0px;
@@ -43,7 +45,7 @@ body {
 #main #bloc_noir {
     background-color: #00000088;
     display: inline-block;
-    width: 660px;
+    width: 29%;
     height: 100%;
     color: #ffffff;
 }
@@ -54,20 +56,20 @@ body {
 }
 
 #main #bloc_noir div h1 {
-    font-size: 96px;
+    font-size: 64px;
     text-decoration: underline;
 }
 
 #main #bloc_noir div h3 {
-    font-size: 64px;
+    font-size: 32px;
     margin-top: -50px;
 }
 
 #main img {
     position: absolute;
     display: inline-block;
-    height: 400px;
-    width: 400px;
+    height: 250px;
+    width: 250px;
     margin-top: 277px;
     margin-left: 170px;
 }
@@ -75,18 +77,18 @@ body {
 #main #sponsors {
     display: inline-block;
     position: absolute;
-    height: 83px;
-    width: 228px;
-    font-size: 36px;
+    height: 40px;
+    width: 150px;
+    font-size: 24px;
     background-color: #fe8103;
     border: none;
     border-radius: 60px;
     color: #ffffff;
     box-shadow: 6px 4px 4px#00000050;
-    margin-left: 944px;
-    margin-top: 72px;
+    margin-top: 80px;
+    right: 5%;
     text-align: center;
-    padding-top: 20px;
+    padding-top: 0px;
 }
 
 #main #sponsors a {
@@ -102,3 +104,33 @@ body {
 #main #sponsors:hover a {
     color: #fe8103;
 }
+
+/*style de la nav du haut*/
+
+#nav_haut {
+    width: 100%;
+    background-color: #0c4c8c;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    height: 130px;
+}
+
+#nav_haut ul {
+    width: 70%;
+    margin: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 0px;
+}
+
+#nav_haut ul div {
+    display: inline;
+    width: 25%;
+    background-color: #007fff;
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+}
+
