@@ -90,6 +90,7 @@
 }
 #grand_bleu{
     background-color: #0C4C8C;
+    width: auto;
 }
 #petit_blanc{
     background-color: white;
@@ -116,4 +117,5 @@ article{
 }
 .image{
     width: 200px;
+    margin-left: 2%;
 }
