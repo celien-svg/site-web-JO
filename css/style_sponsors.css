@@ -1,0 +1,72 @@
+
+@font-face {
+    font-family: 'Poppins';
+    src:    url('../Fonts/Poppins-Medium.woff2') format('woff2'),
+            url('../Fonts/Poppins-Medium.woff') format('woff'),
+            url('../Fonts/Poppins-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src:    url('../Fonts/Poppins-Light.woff2') format('woff2'),
+            url('../Fonts/Poppins-Light.woff') format('woff'),
+            url('../Fonts/Poppins-Light.ttf') format('truetype');
+    font-weight: lighter;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src:    url('../Fonts/Poppins-LightItalic.woff2') format('woff2'),
+            url('../Fonts/Poppins-LightItalic.woff') format('woff'),
+            url('../Fonts/Poppins-LightItalic.ttf') format('truetype');
+    font-weight: lighter;
+    font-style: italic;
+}
+/*style de la nav du haut*/
+
+#nav_haut {
+    width: 100%;
+    background-color: #007fff;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    height: 130px;
+}
+
+#nav_haut ul {
+    width: 80%;
+    margin: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#nav_haut ul a div {
+    display: inline-block;
+    width: 25%;
+    background-color: #0c4c8c;
+    margin-right: -5px;
+    padding: 0px;
+    height: 130px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#nav_haut ul a div p {
+    margin-top: 45px;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 24px;
+}
+
+#nav_haut ul a:hover div {
+    background-color: #ffffff;
+}
+
+#nav_haut ul a:hover div p {
+    color: #000000;
+
+}
