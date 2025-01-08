@@ -148,5 +148,30 @@ body {
 
 #nav_haut ul a:hover div p {
     color: #000000;
-    
 }
+
+/*Style de l'edito*/
+
+#edito {
+    width: 65%;
+    margin: auto;
+    margin-top: 0px;
+    background: #0c4c8c;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    border-top: #00000033 solid;
+    border-bottom-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+}
+
+#edito h2 {
+    margin-left: 15%;
+}
+
+#edito p {
+    width: 70%;
+    margin: auto;
+}
+
+/*Style du caroussel*/
+
