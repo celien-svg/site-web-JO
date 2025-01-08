@@ -77,10 +77,16 @@
 #bleu{
     background-color: #0C4C8C;
     color:white;
-    width: 700px;
-    margin-left: 10%;
+    width: 800px;
+    margin-left: 20%;
     margin-right: 10%;
+    text-align: justify;
+    padding: 20px;
+    border-radius: 0px 5px 5px 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: auto;
     
+  
 }
 #grand_bleu{
     background-color: #0C4C8C;
@@ -90,11 +96,18 @@
     max-width: 160px;
 }
 #blanc{
-    background-color: white;
-    margin-left: 10%;
+    background-color: #ffffff;
+    width: 800px;
+    margin-left: 20%;
+    margin-right: 10%;
+    text-align: justify;
+    padding: 20px;
+    border-radius: 0px 5px 5px 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: auto;
 }
 img{
-    float : left
+    float : left;
 }
 article{
     margin-left: 10%;
