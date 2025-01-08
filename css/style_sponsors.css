@@ -25,6 +25,9 @@
     font-weight: lighter;
     font-style: italic;
 }
+body{
+    font-family: 'Poppins';
+}
 /*style de la nav du haut*/
 
 #nav_haut {
@@ -72,26 +75,51 @@
 }
 #boite{
     background-color: #D9D9D9;
-    max-width: 125px;
+    max-width: 150px;
 }
 #bleu{
     background-color: #0C4C8C;
-    color:white
+    color:white;
+    width: 800px;
+    margin-left: 20%;
+    margin-right: 10%;
+    text-align: justify;
+    padding: 20px;
+    border-radius: 0px 5px 5px 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: auto;
+    
+  
 }
 #grand_bleu{
     background-color: #0C4C8C;
+    width: 1200px;
 }
 #petit_blanc{
     background-color: white;
-    max-width: 160px;
+    max-width: 200px;
+    margin-left: 2%;
 }
 #blanc{
-    background-color: white;
+    background-color: #ffffff;
+    width: 800px;
+    margin-left: 23%;
+    margin-right: 10%;
+    text-align: justify;
+    padding: 20px;
+    border-radius: 0px 5px 5px 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: auto;
 }
 img{
-    float : left
+    float : left;
+    cursor: pointer;
 }
 article{
-    margin-left: 10%;
+    margin-left: 15%;
     margin-right: 10%;
+}
+.image{
+    width: 200px;
+    margin-left: 2%;
 }

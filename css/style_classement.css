@@ -1,14 +1,42 @@
+@font-face {
+    font-family: 'Poppins';
+    src:    url('../Fonts/Poppins-Medium.woff2') format('woff2'),
+            url('../Fonts/Poppins-Medium.woff') format('woff'),
+            url('../Fonts/Poppins-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src:    url('../Fonts/Poppins-Light.woff2') format('woff2'),
+            url('../Fonts/Poppins-Light.woff') format('woff'),
+            url('../Fonts/Poppins-Light.ttf') format('truetype');
+    font-weight: lighter;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src:    url('../Fonts/Poppins-LightItalic.woff2') format('woff2'),
+            url('../Fonts/Poppins-LightItalic.woff') format('woff'),
+            url('../Fonts/Poppins-LightItalic.ttf') format('truetype');
+    font-weight: lighter;
+    font-style: italic;
+}
+
 body{
     background-color: white;
+    font-family: "Poppins";
 }
 
 table{
-    border: 2px solid;
+    border: 1px solid;
     border-collapse:collapse;
     text-align: center;
+    min-width:50%;
 }
 th{
-    border: 2px solid;
     border-collapse:collapse;
     text-align:center;
 }
@@ -31,4 +59,12 @@ td{
 }
 .fongris{
     background-color: #e4e4e4;
+}
+
+.separer{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    width: 60%;
+    margin:auto;
 }
