@@ -82,14 +82,13 @@ body{
 }
 
 article{
-    text-align: justify;
     position: relative;
 	margin-left: 10%;
     margin-right: 10%;
 }
 h3{
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
     font-size: 100%;
 	text-align: center;
 
@@ -99,6 +98,84 @@ img{
     margin: 10px;
     border-radius: 30px;
     border :black solid;  
+}
+
+#club{
+    float: right;
+}
+#troisième_bloc{
+    background-color: white;
+    color: black;
+}
+#deuxième_bloc{ 
+
+    background-color:#0C4C8C; 
+    color: white;
+}
+#quatrième_bloc {
+    background-color:#0C4C8C;
+    color: white;
+}
+}
+
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape){
+    
+@font-face {
+    font-family: 'Poppins';
+    src:    url('../Fonts/Poppins-Medium.woff2') format('woff2'),
+            url('../Fonts/Poppins-Medium.woff') format('woff'),
+            url('../Fonts/Poppins-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src:    url('../Fonts/Poppins-Light.woff2') format('woff2'),
+            url('../Fonts/Poppins-Light.woff') format('woff'),
+            url('../Fonts/Poppins-Light.ttf') format('truetype');
+    font-weight: lighter;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src:    url('../Fonts/Poppins-LightItalic.woff2') format('woff2'),
+            url('../Fonts/Poppins-LightItalic.woff') format('woff'),
+            url('../Fonts/Poppins-LightItalic.ttf') format('truetype');
+    font-weight: lighter;
+    font-style: italic;
+}
+
+body{
+    font-size: 15px;
+	line-height: 150%;
+
+    
+}
+
+article{
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: justify;
+    position: relative;
+	margin: auto;
+}
+h3{
+    font-size: 100%;
+	text-align: center;
+	font-weight: bold;
+	clear: both;
+}
+img{
+    margin-top: 10px;
+    margin-left: 40px;
+    border-radius: 30px;
+    border :black solid;  
+    width: 80%;
 }
 
 #club{
