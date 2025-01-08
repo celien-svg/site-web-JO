@@ -76,13 +76,12 @@ and (orientation : landscape) {
 
 }
 body{
-    
     font-size: 15px;
 	line-height: 150%;
 }
 
 article{
-    position: relative;
+    position: absolute ;
 	margin-left: 10%;
     margin-right: 10%;
 }
@@ -99,6 +98,9 @@ img{
     border-radius: 30px;
     border :black solid;  
 }
+#revenu, #licence{
+    float: left;
+}
 
 #club{
     float: right;
@@ -108,9 +110,11 @@ img{
     color: black;
 }
 #deuxième_bloc{ 
-
+    width: 100%;
     background-color:#0C4C8C; 
     color: white;
+    font-weight: bold;
+    position: relative;
 }
 #quatrième_bloc {
     background-color:#0C4C8C;
@@ -235,7 +239,6 @@ body{
 
     
 }
-
 article{
     margin-left: 10%;
     margin-right: 10%;
