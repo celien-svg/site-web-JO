@@ -76,7 +76,11 @@
 }
 #bleu{
     background-color: #0C4C8C;
-    color:white
+    color:white;
+    width: 700px;
+    margin-left: 10%;
+    margin-right: 10%;
+    
 }
 #grand_bleu{
     background-color: #0C4C8C;
@@ -87,6 +91,7 @@
 }
 #blanc{
     background-color: white;
+    margin-left: 10%;
 }
 img{
     float : left
