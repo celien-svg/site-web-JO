@@ -2,7 +2,8 @@
 and (min-device-width : 1024px)
 and (max-device-width : 5000px)
 and (orientation : landscape) {
-  /* Styles */
+  
+/* Styles */
 
 @font-face {
     font-family: 'Poppins';
@@ -33,6 +34,7 @@ and (orientation : landscape) {
 
 body {
     margin: 0px;
+    font-family: 'Poppins';
 }
 
 /*style de la nav du haut*/
@@ -44,7 +46,7 @@ body {
     margin-bottom: 0px;
     padding-top: 0px;
     padding-bottom: 0px;
-    height: 130px;
+    height: 100px;
 }
 
 #nav_haut ul {
@@ -60,13 +62,13 @@ body {
     background-color: #0c4c8c;
     margin-right: -5px;
     padding: 0px;
-    height: 130px;
+    height: 100px;
     text-align: center;
     vertical-align: middle;
 }
 
 #nav_haut ul a div p {
-    margin-top: 45px;
+    margin-top: 28px;
     text-decoration: none;
     color: #ffffff;
     font-size: 24px;
@@ -78,55 +80,69 @@ body {
 
 #nav_haut ul a:hover div p {
     color: #000000;
-
 }
-body{
 
-    font-family: 'Poppins';
-}
+/*style de l'article*/
 
 article{
     position: absolute ;
 	margin-left: 10%;
     margin-right: 10%;
 }
-h3{
-    margin-left: 10%;
-    margin-right: 10%;
-    font-size: 100%;
-	text-align: center;
 
-	clear: both;
+article h2{
+    margin-left: 40px;
 }
-img{
-    margin: 10px;
+
+.bloc {
+    margin-top: 60px;
+    padding: 70px;
+    padding-bottom: 20px;
+    width: 85%;
     border-radius: 30px;
-    border :black solid;  
 }
-#revenu, #licence{
-    float: left;
+
+article p {
+    display: inline-flex;
+    font-size: 100%;
+	text-align: justify;
+	clear: both;
+    font-weight: normal;
+    max-width: 100%;
+}
+
+#intro {
+    max-width: 100%;
+}
+
+img{
+    left: 50%;
+    width: 500px;
+    border-radius: 30px;
+    border :black solid;
+    display: inline-flex;
+    margin-left: 250px;
 }
 
 #club{
     float: right;
 }
+
 #troisième_bloc{
     background-color: white;
     color: black;
+    border: #0c4c8c solid;
 }
+
 #deuxième_bloc{ 
-    width: 100%;
     background-color:#0C4C8C; 
     color: white;
-    font-weight: bold;
-    position: relative;
-    border-radius: 0px 5px 5px 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
 #quatrième_bloc {
     background-color:#0C4C8C;
     color: white;
-    border-radius: 0px 5px 5px 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 }
@@ -135,33 +151,6 @@ img{
 and (min-device-width : 768px)
 and (max-device-width : 1024px)
 and (orientation : landscape){
-    
-@font-face {
-    font-family: 'Poppins';
-    src:    url('../Fonts/Poppins-Medium.woff2') format('woff2'),
-            url('../Fonts/Poppins-Medium.woff') format('woff'),
-            url('../Fonts/Poppins-Medium.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Poppins';
-    src:    url('../Fonts/Poppins-Light.woff2') format('woff2'),
-            url('../Fonts/Poppins-Light.woff') format('woff'),
-            url('../Fonts/Poppins-Light.ttf') format('truetype');
-    font-weight: lighter;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Poppins';
-    src:    url('../Fonts/Poppins-LightItalic.woff2') format('woff2'),
-            url('../Fonts/Poppins-LightItalic.woff') format('woff'),
-            url('../Fonts/Poppins-LightItalic.ttf') format('truetype');
-    font-weight: lighter;
-    font-style: italic;
-}
 
 body{
     font-size: 15px;
@@ -177,15 +166,10 @@ article{
     position: relative;
 	margin: auto;
 }
-h3{
-    font-size: 100%;
-	text-align: center;
-	font-weight: bold;
-	clear: both;
-}
+
 img{
     margin-top: 10px;
-    margin-left: 40px;
+    margin-left: 200px;
     border-radius: 30px;
     border :black solid;  
     width: 80%;
