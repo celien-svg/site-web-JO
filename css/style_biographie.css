@@ -204,6 +204,7 @@ h3 {
     #intro {
         margin-left: 10px;
         margin-right: 10px;
+        width: auto;
     }
 
     .skipper h3 {
@@ -274,9 +275,9 @@ h3 {
     #nav_haut {
         background-color: #ffffff00;
         position: fixed;
-        width: 250px;
+        width: 50px;
         height: 100%;
-        left: -250px;
+        left: -750px;
         transition: transform 0.3s ease-in-out;
         z-index: 100;
     }
@@ -286,7 +287,7 @@ h3 {
     }
 
     #bouton_menu:checked ~ #nav_haut {
-        transform: translateX(200px);
+        transform: translateX(710px);
     }
 
     #nav_haut a {
