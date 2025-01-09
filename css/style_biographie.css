@@ -325,4 +325,10 @@ h3 {
     }
 }
 
+@media only screen
+    and (max-device-width: 1350px) {
+    #nav_bas {
+        display: none;
+    }
+}
 /*Fin menu nav du bas--------------------------------------------------------------------------------------------------*/
