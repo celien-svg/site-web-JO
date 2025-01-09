@@ -73,7 +73,7 @@ body{
 #nav_haut ul a:hover div p {
     color: #000000;
 }
-/animation de la nav du bas/
+/*animation de la nav du bas*/
 
 #nav_bas {
     margin-top: 100px;
@@ -171,4 +171,43 @@ article{
 .image{
     width: 200px;
     margin-left: 2%;
+}
+/* footer*/
+footer {
+    background-color: #0c4c8c;
+    height: 100px;
+    margin-bottom: -10px;
+    margin-top: 0px;
+}
+
+footer #logo {
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 40px;
+    height: 80px;
+}
+
+footer #fb {
+    position: absolute;
+    height: 70px;
+    width: 70px;
+    right: 2%;
+    margin-top: 15px;
+}
+
+footer #ix {
+    position: absolute;
+    margin-top: 15px;
+    height: 70px;
+    width: 70px;
+    right: 6%;
+}
+
+footer #ins {
+    position: absolute;
+    margin-top: 27px;
+    right: 11%;
+    height: 48px;
+    width: 48px;
+    vertical-align: baseline;
 }
