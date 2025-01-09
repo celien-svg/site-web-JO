@@ -176,6 +176,9 @@ article{
     width: 200px;
     margin-left: 2%;
 }
+P{
+    text-align: center;
+}
 /* footer*/
 footer {
     background-color: #0c4c8c;
@@ -220,6 +223,7 @@ footer #ins {
 and (min-device-width : 768px)
 and (max-device-width : 1024px)
 and (orientation : landscape){
+
 @font-face {
     font-family: 'Poppins';
     src:    url('../fonts/Poppins-Medium.woff2') format('woff2'),
@@ -342,8 +346,125 @@ article{
 }
 @media only screen
 and (min-device-width : 0px)
-and (max-device-width : 901px)
+and (max-device-width : 1080px)
 and (orientation : portrait) {
+    #ligne{
+        display: none;
+    }
+    @font-face {
+        font-family: 'Poppins';
+        src:    url('../fonts/Poppins-Medium.woff2') format('woff2'),
+                url('../fonts/Poppins-Medium.woff') format('woff'),
+                url('../fonts/Poppins-Medium.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+    
+    @font-face {
+        font-family: 'Poppins';
+        src:    url('../fonts/Poppins-Light.woff2') format('woff2'),
+                url('../fonts/Poppins-Light.woff') format('woff'),
+                url('../fonts/Poppins-Light.ttf') format('truetype');
+        font-weight: lighter;
+        font-style: normal;
+    }
+    
+    @font-face {
+        font-family: 'Poppins';
+        src:    url('../fonts/Poppins-LightItalic.woff2') format('woff2'),
+                url('../fonts/Poppins-LightItalic.woff') format('woff'),
+                url('../fonts/Poppins-LightItalic.ttf') format('truetype');
+        font-weight: lighter;
+        font-style: italic;
+    }
+    body{
+        font-family: 'Poppins';
+        margin: 0px;
+    }
+    /*style de la nav du haut*/
+
+#nav_haut {
+    width: 100%;
+    background-color: #007fff;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    height: 100px;
+    display: none;
+}
+
+#nav_haut ul {
+    width: 80%;
+    margin: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#nav_haut ul a div {
+    display: inline-block;
+    width: 25%;
+    background-color: #0c4c8c;
+    margin-right: -5px;
+    padding: 0px;
+    height: 100px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#nav_haut ul a div p {
+    margin-top: 28px;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 24px;
+}
+
+#nav_haut ul a:hover div {
+    background-color: #ffffff;
+}
+
+#nav_haut ul a:hover div p {
+    color: #000000;
+}
+#nav_bas {
+    display: none;
+}
+#boite{
+    background-color: #D9D9D9;
+    max-width: 150px;
+}
+#petit_blanc{
+    background-color: #D9D9D9;
+    max-width: 200px;
+    position: absolute;
+}
+article{
+    margin-left: 15%;
+    margin-right: 10%;
+}
+.image{
+    width: 200px;
+    margin-left: 2%;
+    position: relative;
+}
+img{
+    float : left;
+    cursor: pointer;
+}
+#bleu{
+    display: none;
+}
+#blanc{
+    display: none;
+}
+}
+@media only screen
+and (min-device-width : 0px)
+and (max-device-width : 767px)
+and (orientation : landscape) {
+    #ligne{
+        display: none;
+    }
     @font-face {
         font-family: 'Poppins';
         src:    url('../fonts/Poppins-Medium.woff2') format('woff2'),
