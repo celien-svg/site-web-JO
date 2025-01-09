@@ -141,3 +141,94 @@ tr{
     margin:auto;
 }
 
+/*style du footer -------------------------------------------------------------------------------------------------*/
+
+footer {
+    background-color: #0c4c8c;
+    height: 100px;
+    margin-bottom: -10px;
+    margin-top: 0px;
+}
+
+footer #logo {
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 20px;
+    height: 80px;
+}
+
+footer #fb {
+    position: absolute;
+    height: 70px;
+    width: 70px;
+    right: 10px;
+    margin: 0;
+    padding: 0;
+    margin-top: 15px;
+    z-index: 50;
+}
+
+footer #ins {
+    position: absolute;
+    margin: 0;
+    right: 94px;
+    margin-top: 27px;
+    height: 48px;
+    width: 48px;
+    vertical-align: baseline;
+}
+
+footer p {
+    position: absolute;
+    display: inline-block;
+    font-size: 20px;
+}
+
+footer #ct {
+    right: 170px;
+    margin-top: 40px;
+}
+
+footer #ml {
+    margin-left: 110px;
+    margin-top: 40px;
+    color: #000000;
+    text-decoration: underline 2px;
+}
+
+footer #ml:hover {
+    color: #fe8103;
+    text-decoration: underline #fe8103 2px;
+}
+
+@media only screen
+    and (max-device-width: 645px) {
+        footer p {
+            font-size: 14px;
+        }
+
+        footer #fb {
+            height: 50px;
+            width: 50px;
+            margin-top: 25px;
+        }
+
+        footer #ins {
+            height: 32px;
+            width: 32px;
+            margin-top: 34px;
+            right: 60px;
+        }
+
+        footer #ct {
+            right: 100px;
+        }
+
+        footer #logo {
+            margin-left: 10px;
+        }
+
+        footer #ml {
+            margin-left: 100px;
+        }
+}
