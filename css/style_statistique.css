@@ -476,6 +476,10 @@ img{
 }
 }
 
+table{
+    margin-top: 60px;
+}
+
 @media only screen
     and (max-device-width: 1350px) {
     #nav_bas {
