@@ -26,25 +26,89 @@
 }
 
 body{
-    background-color: white;
+    background-color: #ffffff;
     font-family: "Poppins";
+    margin: 0px;
+}
+
+/*menu_nav_haut*/
+
+#nav_haut {
+    width: 100%;
+    background-color: #007fff;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    height: 100px;
+}
+
+#nav_haut ul {
+    width: 80%;
+    margin: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#nav_haut ul a div {
+    display: inline-block;
+    width: 25%;
+    background-color: #0c4c8c;
+    margin-right: -5px;
+    padding: 0px;
+    height: 100px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#nav_haut ul a div p {
+    margin-top: 28px;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 24px;
+}
+
+#nav_haut ul a:hover div {
+    background-color: #ffffff;
+}
+
+#nav_haut ul a:hover div p {
+    color: #000000;
+}
+
+/*style des tableaux*/
+
+#tableaux {
+    background-color: #0c4c8c;
+    height: 5000px;
+    width: 70%;
+    position: absolute;
 }
 
 table{
-    border: 1px solid;
+    border: 0px solid;
     border-collapse:collapse;
     text-align: center;
-    min-width:50%;
+    min-width:53%;
+    border: #fff solid 8px;
+    border-radius: 10px;
 }
+
+thead{
+    margin: 10px;
+}
+
 th{
     border-collapse:collapse;
-    text-align:center;
+    text-align: center;
 }
 td{
     border-collapse:collapse;
     text-align: center;
 }
-
+tr{
+    background-color: #ffffff;
+}
 
 .jaune{
     color:#ffc800;
@@ -68,3 +132,4 @@ td{
     width: 60%;
     margin:auto;
 }
+
