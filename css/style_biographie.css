@@ -83,9 +83,16 @@ body {
 /*Fin menu nav du haut --------------------------------------------------------------------------------------------*/
 
 /*Mise en page (cartes) -------------------------------------------------------------------------------------------*/
+h2 {
+    margin-left: 7.5%;
+    margin-top: 50px;
+}
+
 #intro {
     text-align: justify;
-    margin: 50px 10px 20px 10px;
+    margin: auto;
+    margin-bottom: 20px;
+    width: 85%;
 }
 
 img {
@@ -101,7 +108,8 @@ img {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 0 10% 20px 10%;
+    margin: 0 0 20px 0;
+    overflow-x: hidden;
 }
 
 .skipper {
@@ -110,7 +118,7 @@ img {
 }
 
 .skipper h3 {
-    margin: 0;
+    margin: 0 0 0 20%;
     padding: 10px;
     background-color: #0c4c8c;
     color: #fff;
@@ -128,11 +136,12 @@ img {
     border-radius: 0px 5px 5px 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     min-height: 280px;
+    margin-left: 20%;
+    margin-right: 20%;
 }
 
 #picon, #bernaz {
     background-color: #0c4c8c;
-    
 }
 
 #picon h3 {
@@ -174,7 +183,7 @@ h3 {
 }
 /*Fin mise en page (cartes) ---------------------------------------------------------------------------------------*/
 
-/*Responsive nav du haut -------------------------------------------------------------------------------------------*/
+/*Responsive nav du haut ------------------------------------------------------------------------------------------*/
 @media only screen 
     and (max-device-width : 1061px) {
         #nav_haut ul #voile div p {
@@ -185,8 +194,25 @@ h3 {
 @media only screen 
     and (max-device-width : 716px) { /*menu hamburger*/
     body {
-        width: 100%;
         overflow-x: hidden;
+    }
+
+    h2 {
+        margin: 50px 10px 20px 10px;
+    }
+
+    #intro {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .skipper h3 {
+        margin-left: 3%;
+    }
+
+    .carte {
+        margin-left: 3%;
+        margin-right: 3%;
     }
 
     #bouton_menu {
@@ -197,7 +223,7 @@ h3 {
         position: fixed;
         top: 10px;
         left: 10px;
-        z-index: 1001;
+        z-index: 101;
         height: 40px;
         width: 40px;
         background-color: #000;
@@ -229,6 +255,7 @@ h3 {
     label.bouton_menu span:nth-of-type(3) {
         top: 26px;
     }
+
 /*animation croix*/
     #bouton_menu:checked + label.bouton_menu span:nth-of-type(1) {
         transform: rotate(45deg);
@@ -251,7 +278,7 @@ h3 {
         height: 100%;
         left: -250px;
         transition: transform 0.3s ease-in-out;
-        z-index: 1000;
+        z-index: 100;
     }
 
     #bouton_menu:checked + label {
@@ -271,7 +298,7 @@ h3 {
 
 @media only screen 
     and (max-device-width : 450px) {
-    img {
+    #photo_skipper {
         width: 100%;
         height: auto;
     }
@@ -331,4 +358,96 @@ h3 {
         display: none;
     }
 }
-/*Fin menu nav du bas--------------------------------------------------------------------------------------------------*/
+/*Fin menu nav du bas----------------------------------------------------------------------------------------------*/
+
+/*style du footer -------------------------------------------------------------------------------------------------*/
+
+footer {
+    background-color: #0c4c8c;
+    height: 100px;
+    margin-bottom: -10px;
+    margin-top: 0px;
+}
+
+footer #logo {
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 20px;
+    height: 80px;
+}
+
+footer #fb {
+    position: absolute;
+    height: 70px;
+    width: 70px;
+    right: 10px;
+    margin: 0;
+    padding: 0;
+    margin-top: 15px;
+    z-index: 50;
+}
+
+footer #ins {
+    position: absolute;
+    margin: 0;
+    right: 94px;
+    margin-top: 27px;
+    height: 48px;
+    width: 48px;
+    vertical-align: baseline;
+}
+
+footer p {
+    position: absolute;
+    display: inline-block;
+    font-size: 20px;
+}
+
+footer #ct {
+    right: 170px;
+    margin-top: 40px;
+}
+
+footer #ml {
+    margin-left: 110px;
+    margin-top: 40px;
+    color: #000000;
+    text-decoration: underline 2px;
+}
+
+footer #ml:hover {
+    color: #fe8103;
+    text-decoration: underline #fe8103 2px;
+}
+
+@media only screen
+    and (max-device-width: 645px) {
+        footer p {
+            font-size: 14px;
+        }
+
+        footer #fb {
+            height: 50px;
+            width: 50px;
+            margin-top: 25px;
+        }
+
+        footer #ins {
+            height: 32px;
+            width: 32px;
+            margin-top: 34px;
+            right: 60px;
+        }
+
+        footer #ct {
+            right: 100px;
+        }
+
+        footer #logo {
+            margin-left: 10px;
+        }
+
+        footer #ml {
+            margin-left: 100px;
+        }
+}
