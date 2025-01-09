@@ -37,6 +37,79 @@ body {
     font-family: 'Poppins';
 }
 
+/*Style du header*/
+
+header {
+    height: 160px;
+    background-color: #0C4C8C;
+    margin-top: -24px;
+    border-bottom: #052544 solid;
+}
+
+header #logo_head {
+    height: 120px;
+    width: 120px;
+    border: none;
+    position: absolute;
+    margin-left: -700px;
+    margin-top: 20px;
+}
+
+header #accueil {
+    display: inline-block;
+    position: absolute;
+    height: 40px;
+    width: 150px;
+    font-size: 24px;
+    background-color: #fe8103;
+    border: none;
+    border-radius: 60px;
+    color: #ffffff;
+    box-shadow: 6px 4px 4px#00000050;
+    top: 50px;
+    right: 5%;
+    text-align: center; 
+}
+
+header #accueil a {
+    text-decoration: none;
+    color: #fff;
+}
+
+header #accueil:hover {
+    background-color: #ffffff;
+}
+
+header #accueil:hover a {
+    color: #fe8103;
+}
+
+header h1 {
+    position: relative;
+    width: 400px;
+    margin-left: 220px;
+    top: 50px;
+    text-decoration: underline;
+    color: #ffffff;
+}
+
+header #titre {
+    position: absolute;
+    background-color: #052544;
+    margin-left: 700px;
+    width: 300px;
+    height: 60px;
+    text-align: center;
+    margin-top: -30px;
+    padding-bottom: 20px;
+    border-radius: 15px;
+}
+
+header #titre p {
+    color: #fff;
+    font-size: 24px;
+}
+
 /*style de la nav du haut*/
 
 #nav_haut {
@@ -229,16 +302,95 @@ and (orientation : portrait) {
 body{
     font-size: 15px;
 	line-height: 150%;
-
-    
+    font-family: 'Poppins';
+    width: 100%;
+    overflow: hidden;
 }
+
+/*Style du header*/
+
+header {
+    height: 160px;
+    background-color: #0C4C8C;
+    margin-top: -24px;
+    border-bottom: #052544 solid;
+}
+
+header #logo_head {
+    height: 120px;
+    width: 120px;
+    border: none;
+    position: absolute;
+    margin-left: -700px;
+    margin-top: 20px;
+}
+
+header #accueil {
+    display: inline-block;
+    position: absolute;
+    height: 40px;
+    width: 150px;
+    font-size: 24px;
+    background-color: #fe8103;
+    border: none;
+    border-radius: 60px;
+    color: #ffffff;
+    box-shadow: 6px 4px 4px#00000050;
+    top: 50px;
+    right: 5%;
+    text-align: center; 
+}
+
+header #accueil a {
+    text-decoration: none;
+    color: #fff;
+}
+
+header #accueil:hover {
+    background-color: #ffffff;
+}
+
+header #accueil:hover a {
+    color: #fe8103;
+}
+
+header h1 {
+    position: relative;
+    width: 400px;
+    margin-left: 220px;
+    top: 50px;
+    text-decoration: underline;
+    color: #ffffff;
+}
+
+header #titre {
+    position: absolute;
+    background-color: #052544;
+    margin-left: 700px;
+    width: 300px;
+    height: 60px;
+    text-align: center;
+    margin-top: -30px;
+    padding-bottom: 20px;
+    border-radius: 15px;
+}
+
+header #titre p {
+    color: #fff;
+    font-size: 24px;
+}
+
 article{
     margin-left: 10%;
     margin-right: 10%;
     text-align: justify;
     position: relative;
 	margin: auto;
+    width: 80%;
 }
+
+
+
 h3{
     font-size: 100%;
 	text-align: justify;
