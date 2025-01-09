@@ -257,7 +257,7 @@ article{
 }
 h3{
     font-size: 100%;
-	text-align: center;
+	text-align: justify;
 	font-weight: bold;
 	clear: both;
 }
@@ -285,4 +285,11 @@ img{
     background-color:#0C4C8C;
     color: white;
 }
+}
+
+@media only screen
+    and (max-device-width: 1350px) {
+    #nav_bas {
+        display: none;
+    }
 }
